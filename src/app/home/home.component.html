@@ -1,13 +1,17 @@
 <p>home works!</p>
 <nav class="grid-x" style="border: 1px solid black;">
-    
 
-    <div *ngFor="let link of navigationArray; let i = index" class="cell small-4">  
-        <div *ngIf="link.hero">
-            <img src="{{link.hero.href}}" alt="">
-          
-        </div>
-       <p>{{link.name}}</p>
+
+    <div *ngFor="let link of navigationArray; let i = index" class="cell small-4">
+        <carousel>
+            <slide *ngIf="link.hero">
+                <img src="{{link.hero.href}}">
+            </slide>
+            <slide *ngFor="let altHero of link.images">
+                <img src="{{altHero.href}}" alt="">
+            </slide>
+        </carousel>
+        <p>{{link.name}}</p>
     </div>
 
 </nav>
