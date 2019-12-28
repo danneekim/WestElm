@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
     this.httpService.get('../../assets/data/content.json').subscribe(
       (data: any) => {
         this.navigationArray = [];
-        this.navigationItems = data.groups;
+        this.navigationItems = data.groups as any [];
         this.navigationItems.forEach(element => {
           if(element.name.indexOf('&amp')){
             let linkTitle = '';
