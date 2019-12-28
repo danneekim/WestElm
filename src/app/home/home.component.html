@@ -1,17 +1,22 @@
-<nav class="grid-x" style="border: 1px solid black;">
+<nav class="grid-x" style="border: 1px solid black; ">
     <div *ngFor="let link of navigationArray; let i = index" class="cell small-12 medium-4 large-4">
-        <div class="col-sm-12 ">
-            <carousel class="text-center col-sm-12">
-                <slide *ngIf="link.hero">
-                    <img src="{{link.hero.href}}" height="{{link.hero.height}}" width="{{link.hero.width}}">
-                </slide>
-                <slide *ngFor="let altHero of link.images">
-                    <img src="{{altHero.href}}" height="{{altHero.height}}" width="{{altHero.width}}">
-                </slide>
-            </carousel>
-            
-            <p>{{link.name}}</p>
+        <div class="align-self-center">
+
+
+            <div class="col-sm-9 col-sm-offset-2">
+                <carousel class="text-center ">
+                    <slide *ngIf="link.hero">
+                        <img src="{{link.hero.href}}" height="{{link.hero.height}}" width="{{link.hero.width}}">
+                    </slide>
+                    <slide *ngFor="let altHero of link.images">
+                        <img src="{{altHero.href}}" height="{{altHero.height}}" width="{{altHero.width}}">
+                    </slide>
+
+                </carousel>
+                <p>{{link.name}}</p>
+            </div>
         </div>
+
     </div>
 
 </nav>
