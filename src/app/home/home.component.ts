@@ -35,14 +35,12 @@ export class HomeComponent implements OnInit {
           }
           // adjust price formats for selling
           if(element.priceRange.selling){
-            let lowSellingPrice = 0;
-            lowSellingPrice = element.priceRange.selling.low;
-            let fixedLowPrice = Number(lowSellingPrice).toFixed(2);
+            let lowPrice = element.priceRange.selling.low;
+            let fixedLowPrice = Number(lowPrice).toFixed(2);
             element.priceRange.selling.low = fixedLowPrice;
 
-            let highSellingPrice = 0;
-            highSellingPrice = element.priceRange.selling.high;
-            let fixedHighPrice = Number(highSellingPrice).toFixed(2); 
+            let highPrice = element.priceRange.selling.high;
+            let fixedHighPrice = Number(highPrice).toFixed(2); 
             element.priceRange.selling.high = fixedHighPrice;
           }
           
