@@ -13,13 +13,16 @@
                         <div class="carousel-caption d-none d-md-block">
                             <h5 class="text-shadow" style="font-weight: 500;">{{link.name}}</h5>
                             <p *ngIf="link.priceRange.type === 'special'">
-                                <span class="text-shadow" style="font-weight: bold;">Limited Time Offer:</span>
-                                <span
+                                <span class="text-shadow regular-price-striked">${{link.priceRange.regular.low}} - ${{link.priceRange.regular.high}}</span>
+                                <br>
+                                <span class="text-shadow discounted-price">Limited Time Offer: ${{link.priceRange.selling.low}} - ${{link.priceRange.selling.high}}</span>
+                                <br>
+                                <span class="text-shadow discount-percentage">Up to {{100 - ((link.priceRange.selling.high/link.priceRange.regular.high)*100)}}%
+                                        OFF</span>
+                                <!-- <span
                                     class="text-shadow discount-percentage">&nbsp;{{100 - ((link.priceRange.selling.high/link.priceRange.regular.high)*100)}}%
                                     OFF</span>
-                                <br>
-                                <span class="text-shadow regular-price-striked">${{link.priceRange.regular.high}}</span>
-                                <span class="text-shadow discount-price">&nbsp;${{link.priceRange.selling.high}}</span>
+                                <br> -->
                             </p>
                             <p class="text-shadow" *ngIf="!link.priceRange.type">
                                 ${{link.priceRange.selling.low}} - ${{link.priceRange.selling.high}}

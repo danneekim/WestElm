@@ -2,19 +2,21 @@
     text-shadow: 2px 2px 4px #000000;
 }
 
-.discount-percentage{
-    color:red; 
-    font-weight: bold; 
-    text-shadow: 1px #ff0000;
+.discounted-price{
+    color: #B33739; 
+  
+    white-space: nowrap;
+    font-weight: bold;
 }
 
 .regular-price-striked{
     text-decoration: line-through;
+
 }
 
-.discount-price{
-    font-weight: bold; 
-    color: yellow; 
+.discount-percentage{
+    color: rgb(5,7,8); 
+    font-weight: bold;
 }
 
 .column-top{
