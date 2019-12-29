@@ -33,8 +33,8 @@ export class HomeComponent implements OnInit {
             linkTitle = element.name.replace(/&amp; Shams/g, '').replace(/&amp;/g, '-');
             element.name = linkTitle;
           }
-          // adjust price for selling
-          if(element.priceRange.selling){
+          // adjust price for selling if special
+          if(element.priceRange.type === 'special'){
             let lowPrice = element.priceRange.selling.low;
             let fixedLowPrice = Number(lowPrice).toFixed(2);
             element.priceRange.selling.low = fixedLowPrice;
@@ -42,18 +42,7 @@ export class HomeComponent implements OnInit {
             let highPrice = element.priceRange.selling.high;
             let fixedHighPrice = Number(highPrice).toFixed(2); 
             element.priceRange.selling.high = fixedHighPrice;
-          }
-          // adjust price for regular
-          if(element.priceRange.regular){
-            let lowPrice = element.priceRange.regular.low;
-            let fixedLowPrice = Number(lowPrice).toFixed(2);
-            element.priceRange.regular.low = fixedLowPrice;
-
-            let highPrice = element.priceRange.regular.high;
-            let fixedHighPrice = Number(highPrice).toFixed(2);
-            element.priceRange.regular.high = fixedHighPrice;
-          }
-          
+          }      
         })
         this.navigationArray = this.navigationItems;
         console.log(this.navigationArray);

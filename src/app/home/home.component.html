@@ -22,7 +22,7 @@
                                 <span class="text-shadow discount-price">&nbsp;${{link.priceRange.selling.high}}</span>
                             </p>
                             <p class="text-shadow" *ngIf="!link.priceRange.type">
-                                ${{link.priceRange.selling.high}}
+                                ${{link.priceRange.selling.low}} - ${{link.priceRange.selling.high}}
                             </p>
                         </div>
                     </carousel>
