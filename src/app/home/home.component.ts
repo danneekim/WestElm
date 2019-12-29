@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.httpService.get('../../assets/data/content.json').subscribe(
+    this.httpService.get('/assets/data/content.json').subscribe(
       (data: any) => {
         this.navigationArray = [];
         this.imagesArray = [];
