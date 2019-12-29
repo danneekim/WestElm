@@ -26,27 +26,25 @@ export class HomeComponent implements OnInit {
       (data: any) => {
         this.navigationArray = [];
         this.imagesArray = [];
-        this.navigationItems = data.groups as any [];
+        this.navigationItems = data.groups as any[];
         this.navigationItems.forEach(element => {
-          if(element.name.indexOf('&amp')){
+          if (element.name.indexOf('&amp')) {
             let linkTitle = '';
             linkTitle = element.name.replace(/&amp; Shams/g, '').replace(/&amp;/g, '-');
             element.name = linkTitle;
           }
           // adjust price for selling if special
-          if(element.priceRange.type === 'special'){
+          if (element.priceRange.type === 'special') {
             let lowPrice = element.priceRange.selling.low;
             let fixedLowPrice = Number(lowPrice).toFixed(2);
             element.priceRange.selling.low = fixedLowPrice;
 
             let highPrice = element.priceRange.selling.high;
-            let fixedHighPrice = Number(highPrice).toFixed(2); 
+            let fixedHighPrice = Number(highPrice).toFixed(2);
             element.priceRange.selling.high = fixedHighPrice;
-          }      
+          }
         })
         this.navigationArray = this.navigationItems;
-        console.log(this.navigationArray);
-        
       },
       (err: HttpErrorResponse) => {
         console.log(err.message);
