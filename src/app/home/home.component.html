@@ -11,6 +11,14 @@
                     </slide>
                     <div class="carousel-caption d-none d-md-block">
                         <h5>{{link.name}}</h5>
+                        <p *ngIf="link.priceRange.type === 'special'">
+                            <span style="text-decoration: line-through">${{link.priceRange.regular.high}}</span><br>
+                            Limited Time Offer: 
+                            ${{link.priceRange.selling.high}}
+                        </p>
+                        <p *ngIf="!link.priceRange.type">
+                            ${{link.priceRange.selling.high}}
+                        </p>
                     </div>
                 </carousel>
               
