@@ -1,3 +1,12 @@
+a{
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:hover{
+    color: rgb(128,0,0, 0.75);
+}
 .text-shadow{
     text-shadow: 2px 2px 6px #000000;
 }
@@ -10,7 +19,6 @@
 
 .regular-price-striked{
     text-decoration: line-through;
-
 }
 
 .discount-percentage{
@@ -21,3 +29,10 @@
 .column-top{
     padding-top:15px;
 }
+
+.carousel-control-right, .carousel-control-left{
+    cursor: pointer;
+}
+
+
+

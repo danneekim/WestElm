@@ -9,25 +9,27 @@
                     <slide *ngFor="let altHero of link.images">
                         <img src="{{altHero.href}}" height="{{altHero.height}}" width="{{altHero.width}}">
                     </slide>
-                    <a href="{{link.links.www}}">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5 class="text-shadow" style="font-weight: 500;">{{link.name}}</h5>
-                            <p *ngIf="link.priceRange.type === 'special'">
-                                <span class="text-shadow regular-price-striked">${{link.priceRange.regular.low}} -
-                                    ${{link.priceRange.regular.high}}</span>
-                                <br>
-                                <span class="text-shadow discounted-price">Limited Time Offer:
-                                    ${{link.priceRange.selling.low}} - ${{link.priceRange.selling.high}}</span>
-                                <br>
-                                <span class="text-shadow discount-percentage">Up to
-                                    {{100 - ((link.priceRange.selling.high/link.priceRange.regular.high)*100)}}%
-                                    OFF</span>
-                            </p>
-                            <p class="text-shadow" *ngIf="!link.priceRange.type">
-                                ${{link.priceRange.selling.low}} - ${{link.priceRange.selling.high}}
-                            </p>
-                        </div>
-                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-shadow" style="font-weight: 500;">
+                            <a id="websiteURL" href="{{link.links.www}}">
+                                {{link.name}}
+                            </a>
+                        </h5>
+                        <p *ngIf="link.priceRange.type === 'special'">
+                            <span class="text-shadow regular-price-striked">${{link.priceRange.regular.low}} -
+                                ${{link.priceRange.regular.high}}</span>
+                            <br>
+                            <span class="text-shadow discounted-price">Limited Time Offer:
+                                ${{link.priceRange.selling.low}} - ${{link.priceRange.selling.high}}</span>
+                            <br>
+                            <span class="text-shadow discount-percentage">Up to
+                                {{100 - ((link.priceRange.selling.high/link.priceRange.regular.high)*100)}}%
+                                OFF</span>
+                        </p>
+                        <p class="text-shadow" style="font-weight:500" *ngIf="!link.priceRange.type">
+                            ${{link.priceRange.selling.low}} - ${{link.priceRange.selling.high}}
+                        </p>
+                    </div>
                 </carousel>
 
             </div>
