@@ -1,7 +1,8 @@
 # WestElmApp
 
-This project was created using Angular 8 and responsively designed to be compatible for mobile, tablet, and desktop.
-A locally stored static JSON file was used (stored in /assets/data/content.json) in order to mock HTTP requests due to Cross-Origin Resource Sharing restrictions and related security issues with provided API. CSS frameworks such as Zurb Foundation and Ngx-Bootstrap were leveraged to build a responsive layout and to reduce overhead time spent on application styling.  
+* This project was created using **Angular 8** and ***responsively designed to be compatible for mobile, tablet, and desktop.***
+* A locally stored static JSON file was used (_ _stored in /assets/data/content.json_ _ ) in order to mock HTTP requests due to Cross-Origin Resource Sharing restrictions and related security issues with provided API. 
+* CSS frameworks such as **Zurb Foundation** and **Ngx-Bootstrap** were leveraged to build a responsive layout and to reduce overhead time spent on application styling.  
 
 ## Deployed Site: 
 * [West Elm - Front End Coding Challenge](https://west-elm-coding-challenge.github.io)
