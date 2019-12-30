@@ -9,6 +9,7 @@ import { Component, OnInit, HostListener } from '@angular/core';
 export class AppComponent implements OnInit {
   title = 'west-elm-app';
   scrollY = 0;
+  showButton: boolean = false;
   
   private eventOptions: boolean|{capture?: boolean, passive?: boolean};
   @HostListener('window:scroll', ['$event']) onScrollEvent($event){
@@ -22,16 +23,16 @@ export class AppComponent implements OnInit {
   }
 
   ngOnDestroy(): void {
-    window.addEventListener('scroll', this.scrollEvent, true);
+    window.addEventListener('scroll', this.scrollEvent, false);
   }
 
   scrollEvent = (): void => {
     const number = this.scrollY;
-    if (number >= 250 ){
-      document.getElementById("myBtn").style.display = "inline";
+    if (number >= 250 && window.pageYOffset != 0){
+      this.showButton = true;
     } 
     else {
-      document.getElementById("myBtn").style.display = "none";
+      this.showButton = false
     }
   }
 
