@@ -28,9 +28,10 @@ export class AppComponent implements OnInit {
   scrollEvent = (): void => {
     const number = this.scrollY;
     console.log(number);
-    if (number > 100 ){
-      document.getElementById("myBtn").style.display = "block";
-    } else {
+    if (number >= 250 ){
+      document.getElementById("myBtn").style.display = "inline";
+    } 
+    else {
       document.getElementById("myBtn").style.display = "none";
     }
   }

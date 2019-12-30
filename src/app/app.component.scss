@@ -11,3 +11,44 @@ svg#clouds {
     background-color: #828A8D;
     z-index: -9;
 }
+
+#myBtn{
+    display: none; 
+    position: fixed; 
+    z-index: 123; 
+    bottom: 20px; 
+    right: 30px; 
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+     text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#myBtn i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    font-size: 19px;
+
+}
+
+#myBtn:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#myBtn:hover i {
+    color: #fff;
+    bottom: 5px;
+    -webkit-transition-delay: all 0.7s ease-in;
+    -moz-transition-delay: all 0.7s ease-in;
+    -ms-transition-delay: all 0.7s ease-in;
+    -o-transition-delay: all 0.7s ease-in;
+    transition-delay: all 0.7s ease-in;
+}
