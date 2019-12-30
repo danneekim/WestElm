@@ -5,7 +5,7 @@
 * CSS frameworks such as **Zurb Foundation** and **Ngx-Bootstrap** were leveraged to build a responsive layout and to reduce overhead time spent on application styling.  
 
 ## Deployed Site: 
-* [West Elm - Front End Coding Challenge](https://west-elm-coding-challenge.github.io)
+* [West Elm - Front End Coding Challenge URL](https://west-elm-coding-challenge.github.io)
 
 ## Provided Reference PDF:
 * [West Elm UI Reference](https://github.com/danneekim/WestElm/blob/master/Front-End%20Coding%20Challenge%20-%20West%20Elm.pdf)
