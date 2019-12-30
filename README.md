@@ -25,7 +25,8 @@
 * Then navigate to `http://localhost:4200/`, the app will automatically reload if you change any of the source files.
 
 ## Further Implementation:
-* Incorporate Angular's ***BrowserAnimationModule*** for a _less choppy and seamless user experience._
-* Write ***unit test cases*** to check for _code quality and to test for any unforeseen software bugs._
-* Implement a ***product search bar*** to _easily search for merchandise based on _name, cost, or color._
-* Create ***navigation menu*** to _sort merchandise based on categories such as price, color, discounts/specials, etc._
+* List of Future Objectives that were unachieved due to time:
+** Incorporate Angular's ***BrowserAnimationModule*** for a _less choppy and seamless user experience._
+** Write ***unit test cases*** to check for _code quality and to test for any unforeseen software bugs._
+** Implement a ***product search bar*** to _easily search for merchandise based on _name, cost, or color._
+** Create ***navigation menu*** to _sort merchandise based on categories such as price, color, discounts/specials, etc._
