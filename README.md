@@ -1,29 +1,30 @@
 # WestElmApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
+This project was created using Angular 8 and responsively designed to be compatible for mobile, tablet, and desktop.
+A locally stored static JSON file was used (stored in /assets/data/content.json) in order to mock HTTP requests due to Cross-Origin Resource Sharing restrictions and related security issues with provided API. CSS frameworks such as Zurb Foundation and Ngx-Bootstrap were leveraged to build a responsive layout and to reduce overhead time spent on application styling.  
 
-## Deployed Site: https://west-elm-coding-challenge.github.io
+## Deployed Site: 
+* [West Elm - Front End Coding Challenge](https://west-elm-coding-challenge.github.io)
 
-## Development server
+## Provided Reference PDF:
+* [West Elm UI Reference](https://github.com/danneekim/WestElm/blob/master/Front-End%20Coding%20Challenge%20-%20West%20Elm.pdf)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Built with:
+* [Angular 8.3.20](https://angular.io/)
+* [Angular CLI 8.3.20](https://www.npmjs.com/package/@angular/cli/v/8.3.20)
+* [Zurb Foundation 6.6.1](https://www.npmjs.com/package/foundation-sites)
+* [Node 10.11.0](https://nodejs.org/fr/blog/release/v10.11.0/)
+* [RxJS 6.4.0](https://www.npmjs.com/package/rxjs/v/6.4.0)
+* [Typescript 3.5.3](https://www.typescriptlang.org/index.html#download-links)
+* [Webpack 4.39.2](https://www.npmjs.com/package/webpack/v/4.39.2)
+* [Ngx-Bootstrap 5.2.0](https://www.npmjs.com/package/ngx-bootstrap)
 
-## Code scaffolding
+## Getting Started:
+* After cloning the repository and running `npm install` to download all dependencies, please run `ng serve` in order to start the dev server. 
+* Then navigate to `http://localhost:4200/`, the app will automatically reload if you change any of the source files.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Further Implementation:
+* Incorporate Angular's BrowserAnimationModule for a less choppy and seamless user experience.
+* Write unit test cases to check for code quality and to test for any unforeseen software bugs.
+* Implement a product search bar - for user to easily search for merchandise based on name, cost, or color.
+* Create navigation menu to navigate merchandise based on categories such as price, color, discounts/specials, etc.
