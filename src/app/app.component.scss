@@ -37,6 +37,11 @@ svg#clouds {
     margin: 0;
     position: relative;
     font-size: 19px;
+    -webkit-transition-delay: all 0.7s ease-in;
+    -moz-transition-delay: all 0.7s ease-in;
+    -ms-transition-delay: all 0.7s ease-in;
+    -o-transition-delay: all 0.7s ease-in;
+    transition-delay: all 0.7s ease-in;
 
 }
 
@@ -45,10 +50,7 @@ svg#clouds {
 }
 #myBtn:hover i {
     color: #fff;
-    bottom: 5px;
-    -webkit-transition-delay: all 0.7s ease-in;
-    -moz-transition-delay: all 0.7s ease-in;
-    -ms-transition-delay: all 0.7s ease-in;
-    -o-transition-delay: all 0.7s ease-in;
-    transition-delay: all 0.7s ease-in;
+    bottom: 2px;
+    
+  
 }
